@@ -67,7 +67,6 @@ class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
         vector<int> ans;
-
         map<int, int> my_map;
 
         for(int i = 0; i < nums.size(); i++)
@@ -78,14 +77,12 @@ public:
         for(int i = 0; i < nums.size(); i++)
         {
             int need = target - nums[i];
-
             if (my_map.find(need) != my_map.end() &&
                 i != my_map[need]){
                 ans.push_back(i);
                 ans.push_back(my_map[need]);
                 return ans;
             }
-
         }
         return ans;
     }
