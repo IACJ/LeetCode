@@ -3,8 +3,6 @@ tempCodeRunnerFile.cpp
 *.dSYM
 .DS_Store
 
-*
-
 !*.cpp
 !*.txt
 !*.md
